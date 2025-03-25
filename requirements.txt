@@ -2,3 +2,4 @@ streamlit
 opencv-python-headless
 paddleocr
 paddlepaddle==2.6.2
+python-3.10.13
