@@ -3,3 +3,4 @@ paddleocr
 paddlepaddle==2.6.2
 numpy<2
 opencv-python-headless==4.9.0.80
+setuptools
