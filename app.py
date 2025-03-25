@@ -144,7 +144,17 @@ st.set_page_config(page_title="OCR de Placas - Streamlit", layout="wide")
 st.title("📸 OCR de Placas em Tempo Real (PaddleOCR + Streamlit)")
 
 # Inicializa OCR
-ocr = PaddleOCR(use_angle_cls=True, lang='pt', use_gpu=False)
+# ocr = PaddleOCR(use_angle_cls=True, lang='pt', use_gpu=False)
+
+ocr = PaddleOCR(
+    use_angle_cls=True,
+    lang='pt',
+    use_gpu=False,
+    det_model_dir='models/det',
+    rec_model_dir='models/rec',
+    cls_model_dir='models/cls'
+)
+
 
 # Cria pasta 'plates' se não existir
 os.makedirs("plates", exist_ok=True)
